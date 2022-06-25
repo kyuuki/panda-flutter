@@ -1,6 +1,6 @@
-# Flutter サンプルベース
+# panda-flutter
 
-Flutter サンプルを作成するためのベース
+panda Flutter 版
 
 ## Table of Contents
 
@@ -15,21 +15,23 @@ Flutter サンプルを作成するためのベース
 
 ## Getting Started
 
-### Flutter アプリケーション作成
+### GitHub から clone
 
-- Android Studio で [File] - [New Flutter Project]
-- Android Studio で [VCS] - [Share Project on GitHub] でリポジトリを作成
-- Initial commit でコミット
+- Android Studio で [File] - [Get form Version Control] で GitHub から sample-flutter-base を選択し、Directory にプロジェクト名を入力
 
-### ページ作成
+### GitHub のリポジトリ変更
 
-- 既存の MyApp を削除して、新規に作成
-- Add sample page でコミット
+- [Git] - [Manage Remotes] で origin を削除
+- [Git] - [GitHub] - [Share Project on GitHub]
+
+### 名前を変更
+
+- pubspec.yaml の name と description
+- android/app/build.gradle の applicationId
 
 ### README 作成
 
 - README.md を編集
-- Modify README でコミット
 
 ## References
 
