@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'ui/sample_page.dart';
+import 'ui/top_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       ),
       darkTheme: ThemeData.dark(),
 
-      home: SamplePage(),
+      home: TopPage(),
     );
   }
 

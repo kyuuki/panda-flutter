@@ -1,29 +1,17 @@
 import 'package:flutter/material.dart';
 
-class SamplePage extends StatelessWidget {
-  const SamplePage({Key? key}) : super(key: key);
+class MainScreen extends StatelessWidget {
+  const MainScreen({
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text("パンダ")),
-      persistentFooterButtons: [
-        Center(
-          child: ElevatedButton(
-            child: const Text("画像ボタン"),
-            onPressed: () async {
-            },
-          ),
-        ),
-      ],
-      body: Column(
+    return SingleChildScrollView(
+      child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Image.network("https://image.itmedia.co.jp/nl/articles/2002/22/nt2020_pandanuma_ep05a_w490.jpg")
-          ),
-          Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(0.0),
               child: Image.network("https://www.nikkansports.com/general/nikkan/news/img/202111160000415-w500_1.jpg")
           ),
           Padding(
@@ -62,5 +50,4 @@ class SamplePage extends StatelessWidget {
       ),
     );
   }
-
 }
